@@ -53,7 +53,7 @@ public class Main {
 
         // a Boat with an engine
         System.out.println();
-        Boat boat = new Boat("V8", 7, 10_00);
+        Boat boat = new Boat("V8", 7, 10_000);
         System.out.println(boat);
 
         // a Plane with 6 tires (two tires on three points technically) and an engine
