@@ -16,6 +16,7 @@ public class Car extends Vehicle{
     }
 
     public void addTire(int tireCount, int diameter, int pressure){
+        this.tireCount = tireCount;
         for(int i = 0; i < tireCount; i++)
             tires.add(new Tire(diameter, pressure));
     }
@@ -31,7 +32,7 @@ public class Car extends Vehicle{
     @Override
     public String toString() {
         return "Car{" +
-                "tires=" + tires +
+                "tires=" + tireCount +
                 ",\n\tengine=" + engine +
                 ", type='" + type + '\'' +
                 ", isLand=" + isLand +

@@ -21,6 +21,7 @@ public class Plane extends Vehicle {
     }
 
     public void addTire(int tireCount, int diameter, int pressure){
+        this.tireCount = tireCount;
         for(int i = 0; i < tireCount; i++)
             tires.add(new Tire(diameter, pressure));
     }
@@ -36,7 +37,7 @@ public class Plane extends Vehicle {
     @Override
     public String toString() {
         return "Plane{" +
-                "tires=" + tires +
+                "tires=" + tireCount +
                 ",\n\tisLanding=" + isLanding +
                 ", engine=" + engine +
                 ", type='" + type + '\'' +
