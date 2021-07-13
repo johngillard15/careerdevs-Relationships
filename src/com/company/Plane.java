@@ -31,7 +31,7 @@ public class Plane extends Vehicle {
     public String toString() {
         return "Plane{" +
                 "tires=" + tires +
-                ",\n\tisLanding=" + isLanding +
+                "\n\tisLanding=" + isLanding +
                 ", engine=" + engine +
                 ", type='" + type + '\'' +
                 ", isLand=" + isLand +
