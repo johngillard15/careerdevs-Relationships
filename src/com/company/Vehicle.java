@@ -34,7 +34,7 @@ public class Vehicle {
 
     public void addPassenger(String name, int weight){
         if(passengers.size() >= maxPassengers)
-            System.out.printf("Maximum passenger limit reached, cannot add \"%s\"\n", name);
+            System.out.printf("Maximum passenger limit of %d reached, cannot add \"%s\"\n", maxPassengers, name);
         else
             passengers.add(new Passenger(name, weight));
     }
