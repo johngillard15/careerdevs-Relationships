@@ -20,9 +20,9 @@ public class Engine {
     @Override
     public String toString() {
         return "Engine{" +
-                " type='" + type + '\'' +
+                "type='" + type + '\'' +
                 ", isOn=" + isOn +
                 ", fuel=" + fuel +
-                "% }";
+                "%}";
     }
 }

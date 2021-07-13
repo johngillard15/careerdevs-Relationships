@@ -47,8 +47,7 @@ public class Main {
         // a Car with 4 tires and an engine
         System.out.println();
         Car car = new Car("V6", 5);
-        for(int i = 0; i < 4; i++)
-            car.addTire(18, 36);
+        car.addTire(4, 18, 36);
         //String[] carPassengers = {"Joe", "Moe"};
         car.addPassenger("Joe", 170);
         car.addPassenger("Moe", 210);
@@ -68,8 +67,7 @@ public class Main {
         // a Plane with 6 tires (two tires on three points technically) and an engine
         System.out.println();
         Plane plane = new Plane("Turboprop", 20);
-        for(int i = 0; i < 6; i++)
-            plane.addTire(27, 80);
+        plane.addTire(6, 27, 80);
         plane.passengers.add(new Passenger("Joe", 170));
         plane.passengers.add(new Passenger("Moe", 210));
         System.out.println(plane);

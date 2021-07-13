@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Car extends Vehicle{
     List<Tire> tires = new ArrayList<>();
+    int tireCount;
 
     public Car(String engineType, int maxPassengers){
         super(engineType, "Car", true, false, false, false, maxPassengers);
@@ -12,6 +13,11 @@ public class Car extends Vehicle{
 
     public void addTire(int diameter, int pressure){
         tires.add(new Tire(diameter, pressure));
+    }
+
+    public void addTire(int tireCount, int diameter, int pressure){
+        for(int i = 0; i < tireCount; i++)
+            tires.add(new Tire(diameter, pressure));
     }
 
     public void removeTire(int index){
