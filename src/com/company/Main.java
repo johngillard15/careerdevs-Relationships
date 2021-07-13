@@ -50,8 +50,12 @@ public class Main {
         for(int i = 0; i < 4; i++)
             car.addTire(18, 36);
         //String[] carPassengers = {"Joe", "Moe"};
-        car.passengers.add(new Passenger("Joe", 170));
-        car.passengers.add(new Passenger("Moe", 210));
+        car.addPassenger("Joe", 170);
+        car.addPassenger("Moe", 210);
+        car.addPassenger("Alex", 150);
+        car.addPassenger("Josh", 180);
+        car.addPassenger("Mike", 230);
+        car.addPassenger("Max", 123);
         System.out.println(car);
 
         // a Boat with an engine
