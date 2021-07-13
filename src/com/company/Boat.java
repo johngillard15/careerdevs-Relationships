@@ -8,6 +8,19 @@ public class Boat extends Vehicle {
         this.maxLoad = maxLoad;
     }
 
+    public void addPassenger(String name, int weight){
+        int currentWeight = 0;
+        for(Passenger passenger : passengers)
+            currentWeight += passenger.weight;
+
+        if(passengers.size() >= maxPassengers)
+            System.out.printf("Maximum passenger limit of %d reached, cannot add \"%s\"\n", maxPassengers, name);
+        else if(currentWeight + weight >= maxLoad)
+            System.out.printf("Maximum load limit of %d reached, cannot add \"%s\"\n", maxLoad, name);
+        else
+            passengers.add(new Passenger(name, weight));
+    }
+
     @Override
     public String toString() {
         return "Boat{" +

@@ -12,6 +12,8 @@ public class Vehicle {
     boolean isSpace;
     List<Passenger> passengers = new ArrayList<>();
     int maxPassengers;
+    List<Tire> tires = new ArrayList<>();
+    int tireCount;
 
     public Vehicle(String engineType, String type, boolean isLand, boolean isWater, boolean isAir, boolean isSpace,
                    int maxPassengers){
@@ -41,5 +43,23 @@ public class Vehicle {
 
     public void removePassenger(String name){
         passengers.removeIf(passenger -> passenger.name.equals(name));
+    }
+
+    public void addTire(int diameter, int pressure){
+        tires.add(new Tire(diameter, pressure));
+    }
+
+    public void addTire(int diameter, int pressure, int tireCount){
+        for(int i = 0; i < tireCount; i++)
+            tires.add(new Tire(diameter, pressure));
+        this.tireCount = tireCount;
+    }
+
+    public void removeTire(int index){
+        tires.remove(index);
+    }
+
+    public void replaceTire(int index){
+        //tires.get(index);
     }
 }
