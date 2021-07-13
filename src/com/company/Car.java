@@ -33,7 +33,7 @@ public class Car extends Vehicle{
     public String toString() {
         return "Car{" +
                 "tires=" + tireCount +
-                ",\n\tengine=" + engine +
+                ", engine=" + engine +
                 ", type='" + type + '\'' +
                 ", isLand=" + isLand +
                 ", isWater=" + isWater +
