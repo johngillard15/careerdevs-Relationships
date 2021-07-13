@@ -32,8 +32,8 @@ public class Car extends Vehicle{
                 ", isWater=" + isWater +
                 ", isAir=" + isAir +
                 ", isSpace=" + isSpace +
-                ", passengers=" + passengers +
-                ", maxPassengers=" + maxPassengers +
+                ",\n\tpassengers=" + passengers +
+                ",\n\tmaxPassengers=" + maxPassengers +
                 '}';
     }
 }

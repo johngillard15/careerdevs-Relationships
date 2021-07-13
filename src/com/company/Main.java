@@ -49,11 +49,16 @@ public class Main {
         Car car = new Car("V6", 5);
         for(int i = 0; i < 4; i++)
             car.addTire(18, 36);
+        //String[] carPassengers = {"Joe", "Moe"};
+        car.passengers.add(new Passenger("Joe", 170));
+        car.passengers.add(new Passenger("Moe", 210));
         System.out.println(car);
 
         // a Boat with an engine
         System.out.println();
         Boat boat = new Boat("V8", 7, 10_000);
+        boat.passengers.add(new Passenger("Joe", 170));
+        boat.passengers.add(new Passenger("Moe", 210));
         System.out.println(boat);
 
         // a Plane with 6 tires (two tires on three points technically) and an engine
@@ -61,6 +66,8 @@ public class Main {
         Plane plane = new Plane("Turboprop", 20);
         for(int i = 0; i < 6; i++)
             plane.addTire(27, 80);
+        plane.passengers.add(new Passenger("Joe", 170));
+        plane.passengers.add(new Passenger("Moe", 210));
         System.out.println(plane);
     }
 }
