@@ -12,7 +12,7 @@ public class Boat extends Vehicle {
     public String toString() {
         return "Boat{" +
                 "maxLoad=" + maxLoad +
-                " engine=" + engine +
+                ", engine=" + engine +
                 ", type='" + type + '\'' +
                 ", isLand=" + isLand +
                 ", isWater=" + isWater +
