@@ -48,7 +48,6 @@ public class Main {
         System.out.println();
         Car car = new Car("V6", 5);
         car.addTire(18, 36, 4);
-        //String[] carPassengers = {"Joe", "Moe"};
         car.addPassenger("Joe", 170);
         car.addPassenger("Moe", 210);
         car.addPassenger("Alex", 150);

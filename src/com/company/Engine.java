@@ -3,7 +3,7 @@ package com.company;
 public class Engine {
     public String type;
     public boolean isOn = false;
-    public int fuel = 100;
+    public int fuel = 100; // use this somewhere eventually
 
     public Engine(String type){
         this.type = type;
