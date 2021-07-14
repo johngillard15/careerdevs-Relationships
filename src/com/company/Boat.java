@@ -15,7 +15,7 @@ public class Boat extends Vehicle {
 
         if(passengers.size() >= maxPassengers)
             System.out.printf("Maximum passenger limit of %d reached, cannot add \"%s\"\n", maxPassengers, name);
-        else if(currentWeight + weight >= maxLoad)
+        else if(currentWeight + weight > maxLoad)
             System.out.printf("Maximum load limit of %d reached, cannot add \"%s\"\n", maxLoad, name);
         else
             passengers.add(new Passenger(name, weight));

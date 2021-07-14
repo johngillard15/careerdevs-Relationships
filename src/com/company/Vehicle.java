@@ -51,7 +51,8 @@ public class Vehicle {
         tires.remove(index);
     }
 
-    public void replaceTire(int index){
-        //tires.get(index);
+    public void replaceTire(int index, int newDiameter, int newPressure){
+        tires.get(index).diameter = newDiameter;
+        tires.get(index).stockPressure = tires.get(index).pressure = newPressure;
     }
 }

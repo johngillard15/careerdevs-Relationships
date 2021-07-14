@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Plane extends Vehicle {
-    boolean isLanding;
+    boolean isLanding = true; // true = landing gear down
 
     public Plane(String engineType, int maxPassengers){
         super(engineType, "Plane", false, false, true, false, maxPassengers);

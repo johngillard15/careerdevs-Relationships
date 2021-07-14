@@ -1,9 +1,9 @@
 package com.company;
 
-public class Tire {
+public class Tire { // figure out a use case for decrementing pressure
     public int diameter;
     public int pressure;
-    public final int stockPressure;
+    public int stockPressure;
 
     public Tire(int diameter, int pressure){ // actually do something with these values
         this.diameter = diameter;
