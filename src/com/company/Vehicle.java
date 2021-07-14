@@ -26,14 +26,6 @@ public class Vehicle {
         this.maxPassengers = maxPassengers;
     }
 
-    public void turnOn(){
-        engine.isOn = true;
-    }
-
-    public void turnOff(){
-        engine.isOn = false;
-    }
-
     public void addPassenger(String name, int weight){
         if(passengers.size() >= maxPassengers)
             System.out.printf("Maximum passenger limit of %d reached, cannot add \"%s\"\n", maxPassengers, name);
